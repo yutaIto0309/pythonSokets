@@ -18,6 +18,6 @@ client = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 client.connect((HOST, PORT))
 #サーバーからのメッセージ受信
 data = client.recv(BUFSIZE)
-print(data.decode("UTF-8"))
+print(data.decode("utf-8"))
 #コネクションのクローズ
 client.close()
